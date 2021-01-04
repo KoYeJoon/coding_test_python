@@ -18,6 +18,6 @@ def solution(phoneBook):
             return False
     return True
 
-print(solution(["97674223","1195524421","118"]))
+print(solution(["97674223","1195524421","118","119"]))
 
 
