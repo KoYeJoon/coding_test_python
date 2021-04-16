@@ -9,3 +9,9 @@ for i in range(len(array)) :
 for i in range(len(count)) :
     for j in range(count[i]) :
         print(i,end=' ') # 띄어쓰기를 구분으로 등장한 횟수만큼 인덱스 출력
+
+
+# lambda로 정렬
+array = [(0,1),(3,0),(2,2)]
+array= sorted(array, key=lambda x : x[1])
+print(array)
