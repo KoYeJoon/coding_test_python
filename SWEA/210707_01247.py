@@ -6,7 +6,7 @@ def getdistance(pos1, pos2):
 
 def bfs():
     stack = []
-    if 
+
 
 for test_case in range(1, T + 1):
     costumer_n = int(input())
