@@ -23,7 +23,7 @@ def solution(play_time, adv_time, logs):
         dp_time_people_stamp[end_time_second]+=-1
 
     for i in range(1,play_time_second+1):
-        dp_time_people_stamp[i] += dp_time_peoㄴple_stamp[i-1]
+        dp_time_people_stamp[i] += dp_time_people_stamp[i-1]
 
     for i in range(1,play_time_second+1):
         dp_time_people_stamp[i] += dp_time_people_stamp[i-1]
