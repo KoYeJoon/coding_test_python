@@ -1,14 +1,10 @@
-n=int(input())
+from scipy import stats
+import numpy as np
+import matplotlib.pyplot as plt
 
-fib0 = 1
-fib1 = 1
-fib = 0
-for i in range(n-1):
-	fib = fib0+fib1
-	fib0 = fib1
-	fib1 = fib
-
-if n == 1:
-	print(1)
-else :
-	print(fib)	
+xx = np.linspace(0,99000, 100)
+rv = stats.norm(40000,20000)
+cdf = rv.cdf(xx)
+# diff_grade = int(rv.cdf(d)*9999)
+plt.plot(xx, cdf)
+plt.show()
